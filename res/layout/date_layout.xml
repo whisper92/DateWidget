@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#6a6a6a"
+    tools:context="com.bird.datewidget.MainActivity" >
+
+    <ImageView
+        android:id="@+id/id_hour1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/big_0" />
+
+    <ImageView
+        android:id="@+id/id_hour2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/id_hour1"
+        android:src="@drawable/big_0" />
+
+    <ImageView
+        android:layout_margin="4dp"
+        android:id="@+id/id_time_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/id_hour2"
+        android:src="@drawable/dot" />
+
+    <ImageView
+        android:id="@+id/id_min1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/id_time_dot"
+        android:src="@drawable/small_0" />
+
+    <ImageView
+        android:id="@+id/id_min2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/id_min1"
+        android:src="@drawable/small_0" />
+
+    <TextView
+        android:id="@+id/id_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_hour1"
+        android:layout_margin="8dp"
+        android:text="@string/widget_date"
+        android:textColor="@color/widget_textcolor" />
+
+    <TextView
+        android:id="@+id/id_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_hour1"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@+id/id_date"
+        android:text="@string/widget_week"
+        android:textColor="@color/widget_textcolor" />
+
+</RelativeLayout>
