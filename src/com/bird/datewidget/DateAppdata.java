@@ -16,7 +16,7 @@ public class DateAppdata extends Application {
 		filter.addAction(Intent.ACTION_DATE_CHANGED);
 		filter.addAction(Intent.ACTION_TIME_CHANGED);
 		filter.addAction(Intent.ACTION_TIMEZONE_CHANGED);
-		//registerReceiver(new TimeChangeReceiver(), filter);
+		registerReceiver(new TimeChangeReceiver(), filter);
 	}
 
 }

@@ -2,7 +2,7 @@ package com.bird.datewidget;
 
 import android.app.Activity;
 import android.os.Bundle;
-
+import com.bird.datewidget.DateWidgetView;
 public class TimeActivity extends Activity {
 
 	@Override

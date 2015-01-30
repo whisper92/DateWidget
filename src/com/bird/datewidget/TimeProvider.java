@@ -50,7 +50,7 @@ public class TimeProvider extends AppWidgetProvider {
 	}
 	
 	public void setHour(RemoteViews remoteViews) {
-		String hour = Utils.getCurrentHour();
+		String hour = Utils.getCurrentHour("12");
 		int h = Integer.valueOf(hour);
 		int h1 = h / 10;
 		int h2 = h % 10;

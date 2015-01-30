@@ -23,10 +23,17 @@ public class Utils {
 		return date;
 	}
 
-	public static String getCurrentHour() {
-		SimpleDateFormat sDateFormat = new SimpleDateFormat("hh");
-		String date = sDateFormat.format(new java.util.Date());
-		return date;
+	public static String getCurrentHour(String format) {
+		if (format.equals("12")) {
+			SimpleDateFormat sDateFormat = new SimpleDateFormat("hh");
+			String date = sDateFormat.format(new java.util.Date());
+			return date;
+		} else {
+			SimpleDateFormat sDateFormat = new SimpleDateFormat("HH");
+			String date = sDateFormat.format(new java.util.Date());
+			return date;
+		}
+		
 	}
 
 	public static String getCurrentMinute() {
